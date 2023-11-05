@@ -55,4 +55,7 @@ public class VentanaPrincipal extends JFrame implements Ventana{
     public void agregarControlador(Controlador control) {
         btnAlquilarLibro.addActionListener(control);
     }
+    public JButton getBotonDatos(){
+        return btnAlquilarLibro;
+    }
 }

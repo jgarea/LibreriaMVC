@@ -41,11 +41,22 @@ public class Controlador implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        
 //        if(e.getActionCommand().equals("BUSCAR")){
 //            String resultado = modelo.obtenerDatosEmpleado(vista.getNumero());
 //            vista.datosAtabla(resultado);
 //        }
+        if(e.getSource().equals(ventanaPrincipal.getBotonDatos())){
         String g=modelo.obtenerDatosEmpleado("empleado");
         System.out.println(g);
+        }
+    }
+    private void mostrarDatos(Ventana vista, Modelo modelo) {
+        String datos = modelo.obtenerDatosEmpleado("sdad");
+        //TODO //vista.mostrarDatos(datos);
+    }
+
+    private void limpiar(Ventana vista) {
+        //TODO //vista.limpiar();
     }
 }

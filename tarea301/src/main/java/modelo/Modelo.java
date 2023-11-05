@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.java.ev.tarea301;
+package modelo;
 
 import java.sql.ResultSet;
 import java.sql.Connection;
@@ -22,7 +22,7 @@ public class Modelo {
     
     public String obtenerDatosEmpleado(String numeroEmpleado){
         
-        String resultadoString = "sda";
+        String resultadoString = "resultados";
 //        try {
 //            Statement stmt = conn.createStatement();
 //            
